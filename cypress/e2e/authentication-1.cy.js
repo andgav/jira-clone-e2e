@@ -3,6 +3,7 @@ describe('Authentication and verifying default setup', () => {
     cy.visit('/project/board');
   });
 
+  
   it('Should create guest account if user has no auth token and verify default amount of issues on board', () => {
     cy.window()
       .its('localStorage.authToken')
